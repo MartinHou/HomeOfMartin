@@ -1,5 +1,5 @@
 # MP #1: One Web Page To Rule Them All
-### Due: September 26, 11.59PM CDT
+### Due: October 01, 11.59PM CDT
 
 ## Table of Contents
 1. [Assignment](#assignment)
@@ -91,7 +91,7 @@ git remote add origin git@gitlab.com:<your-gitlab-username>/mp1.git
   - Show the url to prove you are on your deployed website. Then show all the requirement features you fulfilled in your mp.
   - If you were unable to deploy your website, you can demo your mp locally for some point deduction (hard capped at 80%)
     - Just make sure you do `git status` and `git log` first so we can see your last edits.
-7. Fill out and submit the form [here](https://forms.gle/MtwcF3W8TdTbPw5y9)
+7. Fill out and submit the form [here](https://forms.gle/VAByoP9C6ng3oTbs5)
 
 ## Large Language Model Usage Policy
 
