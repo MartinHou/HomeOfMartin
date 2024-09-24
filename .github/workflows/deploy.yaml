@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 当推送到 main 分支时触发工作流
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3  # 检出代码
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'latest'  # 使用最新的 Node.js 版本
+
+    - name: Install dependencies
+      run: npm install  # 安装依赖
+
+    - name: Build project
+      run: npm run build  # 构建项目
+
+    - name: Deploy to GitHub Pages
+      run: |
+        touch public/.nojekyll  # 防止 GitHub Pages 使用 Jekyll
+      uses: peaceiris/actions-gh-pages@v3  # 使用 gh-pages Action
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
+        publish_dir: ./public  # 发布目录为 ./public，而不是根目录或 docs
+        publish_branch: gh-pages  # 发布到 gh-pages 分支
