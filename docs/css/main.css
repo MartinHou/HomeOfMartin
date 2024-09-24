@@ -1,0 +1,370 @@
+.floating-buttons {
+  position: fixed;
+  top: 50%;
+  /* Align the buttons vertically in the middle */
+  right: 20px;
+  /* Position the buttons 20px from the right edge */
+  transform: translateY(-50%);
+  /* Vertically center the buttons */
+  z-index: 1000;
+  /* Ensure the buttons are on top of other elements */
+}
+
+.circle-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: #333;
+  /* Dark background for buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.circle-btn img {
+  width: 60%;
+  /* Adjust size of the icons inside the buttons */
+  height: 60%;
+}
+
+.circle-btn:hover {
+  background-color: #555;
+  /* Lighter background color on hover */
+}
+
+.email img {
+  content: url("https://img.icons8.com/ios-filled/50/ffffff/new-post.png");
+  /* Email Icon */
+}
+
+.linkedin img {
+  content: url("https://img.icons8.com/ios-filled/50/ffffff/linkedin.png");
+  /* LinkedIn Icon */
+}
+
+.github img {
+  content: url("https://img.icons8.com/ios-filled/50/ffffff/github.png");
+  /* GitHub Icon */
+}
+
+.up-arrow img {
+  content: url("https://img.icons8.com/ios-filled/50/ffffff/up-squared.png");
+  /* Up Arrow Icon */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  background: #798777;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s ease, font-size 0.3s ease;
+}
+.navigation li:first-child {
+  flex-grow: 1;
+  font-size: 2rem;
+  transition: font-size 0.3s ease;
+}
+.navigation a {
+  font-size: 1.2rem;
+  transition: font-size 0.3s ease;
+}
+.navigation a.active {
+  background-color: #405f58;
+  color: #ffffff;
+}
+.navigation.scrolled {
+  padding: 10px 20px;
+}
+.navigation.scrolled li:first-child {
+  font-size: 1.5rem;
+}
+.navigation.scrolled a {
+  font-size: 1rem;
+}
+
+.navigation a,
+.navigation span {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.intro {
+  padding: 1em;
+  text-align: center;
+  background-color: #F8EDE3;
+}
+
+.bgimg {
+  position: relative;
+  height: auto; /* Adjust height as needed */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Ensure background doesn't overflow */
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/campus.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Make the background static */
+  filter: blur(8px); /* Apply the blur to the background image */
+  z-index: 0; /* Ensure it is behind the content */
+}
+
+.education-inner {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the blurred background */
+}
+
+.education {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #BDD2B6;
+}
+.education img {
+  z-index: 1;
+  height: 8em;
+  margin: 1em;
+}
+
+.education-inner {
+  margin: 1em auto;
+  position: relative;
+  z-index: 1;
+}
+.education-inner ul {
+  font-size: larger;
+  line-height: 1.8;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  background-color: #BDD2B6;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.exp .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.exp .row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+}
+.exp .row .column img {
+  height: 5em;
+  margin: 1.5em;
+  object-fit: contain;
+}
+.exp .row .column p {
+  margin-top: 0;
+  font-size: larger;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+.footer a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* Hide anything outside the visible slide area */
+  padding: 0;
+  /* Navigation arrows */
+}
+.carousel .carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* Smooth transition between slides */
+  width: 100%;
+}
+.carousel .slide {
+  min-width: 100%;
+  /* Each slide takes 100% of the carousel width */
+}
+.carousel img {
+  width: 100%;
+  /* Make sure images fill their container */
+  height: auto;
+  /* Adjust this to change the height */
+  object-fit: cover;
+  /* Ensure the images maintain their aspect ratio */
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+.carousel button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel .prev {
+  left: 10px;
+}
+.carousel .next {
+  right: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: #A2B29F;
+}
+
+.block-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 5vw; /* Gap between the blocks */
+  justify-content: center; /* Horizontally center the grid */
+  align-items: center; /* Vertically center within the grid */
+  max-width: 1000px; /* Max width to keep the grid contained */
+  margin: 0 auto; /* Center the grid container horizontally */
+  padding: 20px; /* Optional padding around the grid */
+}
+
+.block {
+  background-color: #798777; /* Soft gray background color */
+  color: white; /* White text color */
+  font-size: 3vw; /* Font size for the text inside the blocks */
+  text-align: center; /* Center the text horizontally */
+  display: flex; /* Flexbox to center the content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 20vw; /* Set a fixed height to make the blocks square */
+  aspect-ratio: 1/1; /* Maintain the square aspect ratio */
+  border-radius: 2vw; /* Add slightly rounded corners */
+  box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for prettiness */
+.block:hover {
+  transform: translateY(-10px); /* Slight movement up on hover */
+  box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Modal background (hidden by default) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* On top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #a1cac0;
+  margin: 15% auto; /* 15% from the top, and centered */
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%; /* Width of the modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.modal-content img {
+  height: 2.5vw;
+  width: auto;
+}
+
+/* Close button (X) */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.word {
+  width: 30%;
+  height: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
