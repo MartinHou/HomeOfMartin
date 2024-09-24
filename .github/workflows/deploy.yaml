@@ -24,11 +24,12 @@ jobs:
     - name: Build project
       run: npm run build  # 构建项目
 
+    - name: Create .nojekyll file
+      run: touch public/.nojekyll  # 创建 .nojekyll 文件
+
     - name: Deploy to GitHub Pages
-      run: |
-        touch public/.nojekyll  # 防止 GitHub Pages 使用 Jekyll
       uses: peaceiris/actions-gh-pages@v3  # 使用 gh-pages Action
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
-        publish_dir: ./public  # 发布目录为 ./public，而不是根目录或 docs
+        publish_dir: ./public  # 发布目录为 ./public
         publish_branch: gh-pages  # 发布到 gh-pages 分支
