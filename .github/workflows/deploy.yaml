@@ -24,6 +24,10 @@ jobs:
     - name: Build project
       run: npm run build  # 构建项目
 
+    # Debug step to check if 'public' directory is correctly created
+    - name: List public directory contents
+      run: ls -l public
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3  # 使用 gh-pages Action
       with:
