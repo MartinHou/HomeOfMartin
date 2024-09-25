@@ -26,13 +26,13 @@ jobs:
 
     # Debug step to check if 'public' directory is correctly created
     - name: List public directory contents
-      run: ls -l public
+      run: ls -l dist
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3  # 使用 gh-pages Action
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
-        publish_dir: ./public  # 发布目录为 ./public
+        publish_dir: ./dist  # 发布目录为 ./public
         publish_branch: gh-pages  # 发布到 gh-pages 分支
         allow_empty_commit: false  # 防止空提交
         enable_jekyll: false  # 自动创建 .nojekyll 文件
