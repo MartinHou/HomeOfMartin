@@ -82,7 +82,7 @@
     </div>
 
     <div id="experience" class="exp">
-        <img src="assets/experiences.png" alt="Experience" width="40%">
+        <img id="exp-word" src="assets/experiences.png" alt="Experience">
         <div class="row">
             <div class="column">
                 <img src="assets/esri.svg" alt="esri">
@@ -101,7 +101,8 @@
         <div class="row">
             <div class="column">
                 <img src="assets/mihoyo.svg" alt="mihoyo">
-                <p>Fullstack Engineer Intern @ <a href="https://www.mihoyo.com/en/">miHoYo</a> (AKA <a href="https://www.hoyoverse.com/en-us/">HoYoverse</a>)</p>
+                <p>Fullstack Engineer Intern @ <a href="https://www.mihoyo.com/en/">miHoYo</a> (AKA <a
+                        href="https://www.hoyoverse.com/en-us/">HoYoverse</a>)</p>
                 <p><i>Creator of the highest-grossing game globally, Genshin Impact, generating over $4 billion.</i></p>
                 <p>Dec 2022 - Jun 2023 | Shanghai, China</p>
             </div>
@@ -116,7 +117,7 @@
     </div>
 
     <div id="skills" class="skills">
-        <img class="word" src="assets/skills.png"/>
+        <img class="word" src="assets/skills.png" />
         <div class="block-container">
             <div class="block" onclick="openModal('popup1')">Programming Languages</div>
             <div class="block" onclick="openModal('popup2')">Backend</div>
@@ -125,6 +126,13 @@
             <div class="block" onclick="openModal('popup5')">Cloud Services</div>
             <div class="block" onclick="openModal('popup6')">Others</div>
         </div>
+        <div id="video-container">
+            <video controls>
+                <source src="assets/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
     </div>
 
     <footer class="footer">
@@ -223,7 +231,7 @@
         </div>
     </div>
 
-    <script src="index.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
