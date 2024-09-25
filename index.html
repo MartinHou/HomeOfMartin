@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/07ed936b30.js" crossorigin="anonymous"></script>
+    <title>MP1</title>
+</head>
+
+<body>
+    <div class="floating-buttons">
+        <a href="mailto:martinhou2020a@gmail.com" class="circle-btn email" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/ych" class="circle-btn linkedin" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/MartinHou" class="circle-btn github" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
+        </a>
+        <a href="#" class="circle-btn up-arrow" id="scrollTop">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/up-squared.png" alt="Scroll to Top">
+        </a>
+    </div>
+
+
+    <ul class="navigation">
+        <li><span><b>Martin Hou's Home</b></span></li>
+        <li><a href="#intro" class="nav-link">Intro</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+    </ul>
+
+    <div class="banner">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="slide">
+                    <img src="4c26c8cbc6ac512b20b8.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="38c092026db887dde1e8.png" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="746f2018e4d6333c8f99.png" alt="Slide 3">
+                </div>
+            </div>
+
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <div id="intro" class="intro">
+        <img src="948e320889968782b086.png" alt="Martin Hou">
+        <h1>Martin Hou</h1>
+        <p>This is Martin (Yunchao) Hou, a skilled backend/fullstack developer!</p>
+        <p>Completing my M.S. in Computer Science at UIUC in May/Aug/Dec 2025.</p>
+        <p>Seeking a software engineering internship Jan-May 2025.</p>
+        <p>Seeking a full-time role starting from May/Aug 2025.</p>
+
+        <a class="resume-link" href="https://drive.google.com/file/d/1_fpQJKGJvPQ5ONtVfFnZCzezgDQ9O9d0/view?usp=sharing"
+            target="_blank">See my latest resume</a>
+    </div>
+
+    <div id="education" class="education bgimg">
+        <div class="blur"></div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDciIGhlaWdodD0iNjUuNjc5IiB2aWV3Qm94PSIwIDAgMjQ3IDY1LjY3OSI+CiA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLjMzMzMgMCAwIC0xLjMzMzMgLTc4LjEyOSA4My45ODYpIj4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCguNjEwNTggMCAwIC42MTA1OCA1OS4zNzUgMTQuNTgxKSI+CiAgIDxwYXRoIGQ9Im0wIDc4LjIydi0yMS4wNTloMTIuMDM0di0zNi4xMDFoLTEyLjAzNHYtMjEuMDZoNTQuMTUydjIxLjA2aC0xMi4wMzR2MzYuMTAxaDEyLjAzNHYyMS4wNTl6bTI3Ni45LTIuODY4MmMtMy45MDggMC02Ljc0NTYtMi45NDgzLTYuNzQ1Ni02LjU0Nzl2LTAuMDM1MTZjMC0zLjU5OTcgMi44MDItNi41MTEyIDYuNzA5LTYuNTExMiAzLjkwNyAwIDYuNzQ1NiAyLjk0NzYgNi43NDU2IDYuNTQ2NHYwLjAzNjYyYzAgMy41OTg1LTIuODAyIDYuNTExMi02LjcwOSA2LjUxMTJ6bS03NC4zNy0wLjAzNjYyYy0yLjU4NyAwLTQuNDMxMi0xLjUxOS00LjQzMTItMy44MTU5di0wLjAzNjYyYzAtMi41MTM3IDEuNjQ0My0zLjIxOTcgNC4xOTUzLTMuODcwMSAyLjExNS0wLjU0MyAyLjU1MDMtMC45MDQ1IDIuNTUwMy0xLjYwODR2LTAuMDM4MDljMC0wLjc0MTQtMC42ODY2Ni0xLjE5MjQtMS44MjY3LTEuMTkyNC0xLjQ0NiAwLTIuNjQwMyAwLjU5NjAyLTMuNzc5MyAxLjUzNjZsLTEuNjQ1LTEuOTcwMmMxLjUxOS0xLjM1NjYgMy40NTMxLTIuMDI3MyA1LjM3MDEtMi4wMjczIDIuNzMyIDAgNC42NDk0IDEuNDEyMSA0LjY0OTQgMy45MjU4djAuMDM1MTZjMCAyLjIwNy0xLjQ0OTEgMy4xMjkxLTQuMDE1MSAzLjc5ODMtMi4xOSAwLjU2MTMtMi43MzE5IDAuODMyMDYtMi43MzE5IDEuNjY0MXYwLjAzNjYyYzAgMC42MTUyIDAuNTYwOTggMS4xMDMgMS42MjYgMS4xMDMgMS4wNjkgMCAyLjE3Mi0wLjQ3MDY1IDMuMjkzLTEuMjQ4bDEuNDQ4NyAyLjA5OTFjLTEuMjg1IDEuMDMtMi44NjA2IDEuNjA4NC00LjcwMzYgMS42MDg0em0tMTA3LTAuMTgwMTh2LTcuMjM0OWMwLTMuNzI2NiAyLjA4MDItNS42MjUgNS40ODE0LTUuNjI1IDMuMzk5IDAgNS41NTE4IDEuODgwNSA1LjU1MTggNS43MTQ0djcuMTQ1NWgtMi43ODQ3di03LjI1MjRjMC0yLjAwNy0xLjAzMTUtMy4wMzk2LTIuNzMwNS0zLjAzOTYtMS43MDE5IDAtMi43MzA1IDEuMDY3OS0yLjczMDUgMy4xMzA0djcuMTYxNnptMTkuMDE3IDB2LTEyLjY2MWgyLjc0OTV2OC4wNDc5bDYuMTMwNC04LjA0NzloMi4zNzAxdjEyLjY2MWgtMi43NDk1di03Ljc5NTlsLTUuOTMxMiA3Ljc5NTl6bTE5LjQzNyAwdi0xMi42NjFoMi43ODYxdjEyLjY2MXptOS42NTMzIDAgNS4xMTY3LTEyLjc1MWgyLjQ1OTVsNS4xMTk2IDEyLjc1MWgtMy4wMDQ0bC0zLjMwNzYtOC45MTY1LTMuMzEwNiA4LjkxNjV6bTE5LjUzNyAwdi0xMi42NjFoOS42NDAxdjIuNDc3aC02Ljg3M3YyLjY1ODdoNS45NjkydjIuNDc3MWgtNS45NjkydjIuNTY5M2g2Ljc4MjJ2Mi40Nzg1em0xNy4yNzkgMHYtMTIuNjYxaDIuNzg0N3Y0LjA1MDNoMi4xODdsMi43MTQ0LTQuMDUwM2gzLjI1NDlsLTMuMDkzOCA0LjUyMDVjMS42MSAwLjU5ODEgMi43MTI5IDEuODgxNCAyLjcxMjkgMy45MjQzdjAuMDM2NjJjMCAyLjYwNDItMS43ODg5IDQuMTc5Mi00Ljc3MzkgNC4xNzkyem0zNC42NzkgMHYtMTIuNjYxaDIuNzg0N3YxMi42NjF6bTkuNzQ3MSAwdi0yLjU2OTNoMy44NTI1di0xMC4wOTFoMi43ODQ3djEwLjA5MWgzLjg1MTF2Mi41Njkzem0xNi43MzkgMCA0Ljg2NDgtNy42Njg1di00Ljk5MjJoMi43ODQ3djUuMDQ2NGw0Ljg2NDcgNy42MTQzaC0zLjE2NTVsLTMuMDc0Ny01LjA4My0zLjAyMDUgNS4wODN6bTQ5LjQ2IDB2LTEyLjY2MWgyLjc4NDd2NC44OTk5aDYuMDM5NnYyLjUzMjdoLTYuMDM5NnYyLjY5NTNoNi44NTR2Mi41MzI3em0tMTQuMjEtMi4zNTI1YzIuMjQ0IDAgMy44MzM1LTEuODA3OCAzLjgzMzUtMy45Nzg1di0wLjAzNTE2YzAtMi4xNzExLTEuNTU0OS0zLjk0MzQtMy43OTY5LTMuOTQzNC0yLjI0MyAwLTMuODMzNSAxLjgwODYtMy44MzM1IDMuOTc4NXYwLjAzNjYyYzAgMi4xNjg4IDEuNTU0OSAzLjk0MTkgMy43OTY5IDMuOTQxOXptLTkzLjYzLTAuMTYyNmgyLjc2NTZjMS4zNTcgMCAyLjE5LTAuNjE1MDIgMi4xOS0xLjgwNzZ2LTAuMDM2NjJjMC0xLjA2NjQtMC43NzgyOC0xLjc5LTIuMTM0My0xLjc5aC0yLjgyMTN6bTU0LjY4MS0xOS4wMTFjLTEwLjAwOCAwLTE3LjI4MS03LjU1MTUtMTcuMjgxLTE2Ljc3MXYtMC4wOTM3NWMwLTkuMjE5OSA3LjE4Mi0xNi42OCAxNy4xOS0xNi42OHMxNy4yODEgNy41NTIgMTcuMjgxIDE2Ljc3NHYwLjA5MDgyYzAgOS4yMjA3LTcuMTgxIDE2LjY4LTE3LjE5IDE2LjY4em01MC4wMDQtMC4wOTIyOGMtNi42MjUgMC0xMS4zNTEtMy44OTI0LTExLjM1MS05Ljc3NjR2LTAuMDkyMjljMC02LjQ0MDYgNC4yMTUtOC4yNDc1IDEwLjc0OS05LjkxNTUgNS40MjEtMS4zOTA2IDYuNTMzMi0yLjMxNTcgNi41MzMyLTQuMTIzNXYtMC4wOTIyOWMwLTEuOTAwOC0xLjc2MTItMy4wNTg2LTQuNjgwMi0zLjA1ODYtMy43MDYgMC02Ljc2MzYgMS41MjkzLTkuNjgyNiAzLjkzNzVsLTQuMjE3My01LjA0OTNjMy44OTEtMy40NzU4IDguODUwMi01LjE4ODUgMTMuNzYyLTUuMTg4NSA2Ljk5NiAwIDExLjkwOCAzLjYxMzggMTEuOTA4IDEwLjA1M3YwLjA5MjI5YzAgNS42NTM1LTMuNzA3MSA4LjAxNjEtMTAuMjg2IDkuNzMxLTUuNjA3IDEuNDM2My02Ljk5NzYgMi4xMzEtNi45OTc2IDQuMjYyN3YwLjA5MjI4YzAgMS41NzUgMS40MzU5IDIuODI3MSA0LjE2ODkgMi44MjcxIDIuNzM1IDAgNS41NjExLTEuMjA1NyA4LjQzMzEtMy4xOTc4bDMuNzA5IDUuMzc0NWMtMy4yOSAyLjY0MDYtNy4zMjEzIDQuMTIzNS0xMi4wNDggNC4xMjM1em0tMTkxLjMtMC40NjI5di0zMi40MzVoNy4xMzUzdjMyLjQzNXptMTUuNjEyIDB2LTMyLjQzNWgyMy4zMDR2Ni40ODc4aC0xNi4xNjl2MjUuOTQ3em0yOC41MzIgMHYtMzIuNDM1aDIzLjMwNnY2LjQ4NzhoLTE2LjE3MnYyNS45NDd6bTI4LjY4OSAwdi0zMi40MzVoNy4xMzM4djMyLjQzNXptMTUuNjExIDB2LTMyLjQzNWg3LjA0M3YyMC42MTlsMTUuNzA2LTIwLjYxOWg2LjA3MDN2MzIuNDM1aC03LjA0M3YtMTkuOTY5bC0xNS4xOTYgMTkuOTY5em03Ni45NDcgMHYtMzIuNDM1aDcuMTM2N3YzMi40MzV6bS0yNC4xODgtNi4wMjJjNS43NDYgMCA5LjgyMTgtNC42MzUzIDkuODIxOC0xMC4xOTR2LTAuMDkzNzVjMC01LjU1OTMtMy45ODUtMTAuMS05LjczMS0xMC4xLTUuNzQ1IDAtOS44MjE4IDQuNjMzMy05LjgyMTggMTAuMTk0djAuMDkwODJjMCA1LjU2MDUgMy45ODUgMTAuMTAzIDkuNzMxIDEwLjEwM3ptLTQ1Ljc5MS0zNS43MDZjLTIuNTA5IDAtNC4yNjEyLTEuOTAzLTQuMjYxMi00LjIyNjF2LTAuMDIzNDM3YzAtMi4zNDY5IDEuNzg1OS00LjIwMjYgNC4xOTA5LTQuMjAyNiAxLjU3NSAwIDIuNTEwNiAwLjU1OTc4IDMuMzUxNiAxLjQ1OWwtMS4xNDU1IDEuMTU1OGMtMC42NDEtMC41ODM5OC0xLjIxMy0wLjk1NjU0LTIuMTQ2LTAuOTU2NTQtMS40MDIgMC0yLjM3MDEgMS4xNjYzLTIuMzcwMSAyLjU2Nzl2MC4wMjM0MzdjMCAxLjQgMC45OTIxMiAyLjU0NTkgMi4zNzAxIDIuNTQ1OSAwLjgxNiAwIDEuNDU4OS0wLjM1MjA1IDIuMDg4OS0wLjkyNDMybDEuMTQ0IDEuMzE5OGMtMC43NTkgMC43NDY5LTEuNjgxNyAxLjI2MTItMy4yMjI2IDEuMjYxMnptOTAuOTc3IDBjLTIuNDc1IDAtNC4yODQ3LTEuOTAzLTQuMjg0Ny00LjIyNjF2LTAuMDIzNDM3YzAtMi40MTcyIDEuNzUxNC00LjIwMjYgNC4yOTY0LTQuMjAyNiAxLjQ5NCAwIDIuNjQ5MyAwLjU4MjgxIDMuNDg5MyAxLjI5NDl2My41NDkzaC0zLjU0OTN2LTEuNTUyN2gxLjgxMDZ2LTEuMTY2Yy0wLjQ1NS0wLjMyNzM0LTEuMDM5NC0wLjQ5MDcyLTEuNjkzNC0wLjQ5MDcyLTEuNDQ4IDAtMi40NzQxIDEuMDk3Mi0yLjQ3NDEgMi41OTEzdjAuMDIzNDM3YzAgMS4zODg3IDEuMDM4MiAyLjU0NTkgMi4zNDUyIDIuNTQ1OSAwLjk0NiAwIDEuNTA2Mi0wLjMwNTE4IDIuMTM3Mi0wLjgzMDU3bDEuMTMyMyAxLjM2NjdjLTAuODUyIDAuNzIzNC0xLjczODUgMS4xMjA2LTMuMjA5NSAxLjEyMDZ6bS0xNDMuMjItMC4wODIwMzEtMy41MDI0LTguMjI5NWgxLjgzNGwwLjc0NzA3IDEuODMyNWgzLjQ1NTZsMC43NDcwNy0xLjgzMjVoMS44Nzk0bC0zLjUwMSA4LjIyOTV6bTI4LjE1NCAwLTMuNTAxLTguMjI5NWgxLjgzMjVsMC43NDcwNyAxLjgzMjVoMy40NTU2bDAuNzQ3MDctMS44MzI1aDEuODc5NGwtMy41MDI0IDguMjI5NXptNTAuMTkxIDAtMy41MDI0LTguMjI5NWgxLjgzNGwwLjc0NzA3IDEuODMyNWgzLjQ1NTZsMC43NDcwNy0xLjgzMjVoMS44Nzk0bC0zLjUwMjQgOC4yMjk1em00MC45MDEgMC0zLjUwMjQtOC4yMjk1aDEuODM0bDAuNzQ3MDcgMS44MzI1aDMuNDU1NmwwLjc0NzA3LTEuODMyNWgxLjg3NzlsLTMuNTAxIDguMjI5NXptLTE2Mi40NC0wLjA1NzEyOXYtNC42Njk5YzAtMi40MDU1IDEuMzQzMS0zLjYzMTMgMy41Mzc2LTMuNjMxMyAyLjE5NCAwIDMuNTgzIDEuMjE1MyAzLjU4MyAzLjY4OTl2NC42MTEzaC0xLjc5NzR2LTQuNjgxNmMwLTEuMjk2MS0wLjY2NTY4LTEuOTYxNC0xLjc2MzctMS45NjE0LTEuMDk3MiAwLTEuNzYyMiAwLjY4ODc3LTEuNzYyMiAyLjAydjQuNjIzem0xMy44MDggMHYtOC4xNzI0aDEuNzk4OHYyLjYxMzNoMS40MTIxbDEuNzUyLTIuNjEzM2gyLjEwMDZsLTEuOTk2NiAyLjkxOGMxLjAzOSAwLjM4NTU1IDEuNzUyIDEuMjE0NCAxLjc1MiAyLjUzMjd2MC4wMjM0MzdjMCAwLjc3MDMyLTAuMjQ1MiAxLjQxMjYtMC43MDAyIDEuODY3Ny0wLjUzNyAwLjUzNzEtMS4zNDI4IDAuODMwNTctMi4zODE4IDAuODMwNTd6bTEzLjI5NSAwdi04LjE3MjRoMy44ODc3YzEuODQ0IDAgMy4wNjAxIDAuNzQ3MDcgMy4wNjAxIDIuMjQxMnYwLjAyMzQzN2MwIDEuMDk3Ni0wLjU4NDc3IDEuNjQ0Ny0xLjUzMDggMi4wMDY4IDAuNTgyOTkgMC4zMjczNCAxLjA3MzcgMC44NDE4IDEuMDczNyAxLjc2Mzd2MC4wMjM0MzdjMCAwLjU2MDU0LTAuMTg2NTcgMS4wMTYxLTAuNTU5NTcgMS4zODg3LTAuNDY3IDAuNDY4LTEuMjAyMiAwLjcyNTEtMi4xMzcyIDAuNzI1MXptMjcuMzYyIDB2LTguMTcyNGgxLjc3Mzl2NS4xOTQzbDMuOTU4LTUuMTk0M2gxLjUyOTN2OC4xNzI0aC0xLjc3Mzl2LTUuMDMzMmwtMy44MjkxIDUuMDMzMnptNTAuNTQyIDB2LTguMTcyNGgxLjc5NzR2My4yNzk4aDMuMzE2NHYtMy4yNzk4aDEuNzk3NHY4LjE3MjRoLTEuNzk3NHYtMy4yMzQ0aC0zLjMxNjR2My4yMzQ0em0yNy44MDQgMHYtOC4xNzI0aDEuNzYyMnY1LjI5OThsMi4yNzc4LTMuNDU1NmgwLjA0NTRsMi4yOTk4IDMuNDkwN3YtNS4zMzVoMS43ODU2djguMTcyNGgtMS45MzY1bC0yLjE0ODktMy40NTctMi4xNDc1IDMuNDU3em0xNC45ODggMHYtOC4xNzI0aDEuNzk3NHYyLjQ1MDdoMS4zNjUyYzEuODMzIDAgMy4zMDQ3IDAuOTgxMTUgMy4zMDQ3IDIuODcyNnYwLjAyMzQzN2MwIDEuNjY5Mi0xLjE3OTkgMi44MjU3LTMuMTI4OSAyLjgyNTd6bTI1Ljk5NSAwdi04LjE3MjRoMS43OTc0djguMTcyNHptMjIuNzAyIDB2LTguMTcyNGgxLjc3Mzl2NS4xOTQzbDMuOTU4LTUuMTk0M2gxLjUyOTN2OC4xNzI0aC0xLjc3NTR2LTUuMDMzMmwtMy44MjkxIDUuMDMzMnptLTE2Ny42NC0xLjU3NjJoMS43NzM5YzAuNzU5IDAgMS4xNzkyLTAuMzA1MTggMS4xNzkyLTAuODQyMjl2LTAuMDIzNDM3YzAtMC42MDYyNS0wLjUwMDkyLTAuODYyNzktMS4yOTQ5LTAuODYyNzloLTEuNjU4MnptLTEzLjI0OC0wLjA0Njg3NWgxLjc4NTZjMC44NzUgMCAxLjQxMzYtMC4zOTY3NyAxLjQxMzYtMS4xNjc1di0wLjAyMzQzOGMwLTAuNjg5NDYtMC41MDM0Mi0xLjE1NzItMS4zNzg0LTEuMTU3MmgtMS44MjA4em0xMzMuOTkgMGgxLjM4ODdjMC45IDAgMS40NTktMC40MzE5MyAxLjQ1OS0xLjIzNzh2LTAuMDIzNDM3YzAtMC43LTAuNTIzODMtMS4yMzc4LTEuNDIzOC0xLjIzNzhoLTEuNDIzOHptLTEwNS42LTAuNDc5IDEuMDg2OS0yLjY0OTloLTIuMTcyNHptMjguMTU0IDAgMS4wODU0LTIuNjQ5OWgtMi4xNzA5em01MC4xOTEgMCAxLjA4NjktMi42NDk5aC0yLjE3MDl6bTQwLjkwMSAwIDEuMDg1NC0yLjY0OTloLTIuMTcwOXptLTgxLjI1My0xLjU5OTZ2LTEuNzA1MWgzLjU5NjJ2MS43MDUxem0tNTMuMTMzLTEuMDk3MmgyLjA3ODZjMC45MjEgMCAxLjMzMTUtMC4zMzg4NyAxLjMzMTUtMC44ODc3di0wLjAyMzQzN2MwLTAuNjA3NDItMC40ODA0MS0wLjg4NjIzLTEuMjc0NC0wLjg4NjIzaC0yLjEzNTd6IiBmaWxsPSIjMTMyOTRiIi8+CiAgIDxwYXRoIGQ9Im00Mi4xMTkgNjAuMTdoOS4wMjQzdjE1LjA0MmgtNDguMTM2di0xNS4wNDJoOS4wMjYyYzEuNjU5OCAwIDMuMDA3OC0xLjM0NTcgMy4wMDc4LTMuMDA4NnYtMzYuMTAzYzAtMS42NTk0LTEuMzQ4LTMuMDA3OC0zLjAwNzgtMy4wMDc4aC05LjAyNjJ2LTE1LjA0MWg0OC4xMzZ2MTUuMDQxaC05LjAyNDNjLTEuNjYxNyAwLTMuMDA5MyAxLjM0ODQtMy4wMDkzIDMuMDA3OHYzNi4xMDNjMCAxLjY2MjkgMS4zNDc2IDMuMDA4NiAzLjAwOTMgMy4wMDg2IiBmaWxsPSIjZmY1ZjA1Ii8+CiAgPC9nPgogPC9nPgo8L3N2Zz4K" alt="Education">
+        <div class="education-inner">
+            <ul>
+                <li>ECE408 - Applied Parallel Programming</li>
+                <li>CS409 - Art of Web Programming</li>
+                <li>CS411 - Database Systems</li>
+                <li>CS441 - Applied Machine Learning</li>
+                <li>CS498 - Cloud Computing Applications</li>
+                <li>CS511 - Advanced Data Management</li>
+                <li>CS537 - Advanced Topics in IoT</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="experience" class="exp">
+        <img id="exp-word" src="bf844dc7798e472fb967.png" alt="Experience">
+        <div class="row">
+            <div class="column">
+                <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4OC45ODIyMzciIHZpZXdCb3g9IjAgMCA4NCAzMCIgd2lkdGg9IjUyOS4xNTAyNjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTc3LjI3Ny41Yy0xLjQ4IDAtMi41NTQgMS4xNzUtMi41NTQgMi40ODggMCAxLjMxNCAxLjA3NCAyLjQ5IDIuNTU0IDIuNDlzMi42MjItMS4wNzEgMi42MjItMi40OWMwLTEuNDE2LTEuMTQzLTIuNDg4LTIuNjIyLTIuNDg4em0tMS45MTMgMjMuNDI2aDMuODkxdi0xNS41NzNoLTMuODkxem0tMzQuODQ5LTE1Ljk2MWMtNC43MDIgMC04LjQ2NSAzLjI3NS04LjQ2NSA4LjE3NCAwIDQuODk4IDMuNzYzIDguMTc3IDguNDY1IDguMTc3IDIuMTQ2IDAgNC4xNjUtLjY2NyA1Ljg1Mi0yLjMxbC0yLjQ1Ny0yLjQ1N2MtLjkxNi45NjQtMi4wOTMgMS42NTEtMy43OCAxLjY1MS0yLjE3NSAwLTMuOTI3LTEuMzk3LTQuMTg4LTMuNjk4aDExLjg3NXYtMS4wN2MwLTUuNDItMi45NS04LjQ2Ny03LjMwMi04LjQ2N3ptLTQuNTczIDYuNjE3Yy4yOTMtMi4yNCAxLjcyMS0zLjcgNC4wMjMtMy43IDIuNDM0IDAgMy45MjYgMS40MyAzLjk2IDMuN3ptMTcuMzA1LTEuODQ5YzAtMS4xNjkgMS4yMzMtMS42NTUgMi4yNzMtMS42NTUgMS4zMiAwIDIuMjkyLjU0NyAzLjAzNyAxLjU3N2wyLjQ3Ni0yLjQ3NGMtMS4yODItMS42LTMuNDA3LTIuMjE2LTUuNDE4LTIuMjE2LTMuMTQ3IDAtNi4yNjIgMS41NTUtNi4yNjIgNS4wMjggMCA1LjkzOCA4LjQwMyAzLjQwNiA4LjQwMyA2LjYxNyAwIDEuMjMzLTEuNDYgMS43ODQtMi41OTUgMS43ODQtMS42NSAwLTIuNjg3LS44MDYtMy42OS0xLjkwNWwtMi41MTUgMi41MTRjMS41OCAxLjcxMSAzLjYyIDIuMzEzIDUuOTc4IDIuMzEzIDMuMTc5IDAgNi43MTctMS4yOTkgNi43MTctNC45OTggMC02LjA2Ny04LjQwNC0zLjc5NS04LjQwNC02LjU4NXptMTQuMTUtMS45MTZoLS4wNjJ2LTIuNDY0aC0zLjg5MnYxNS41NzNoMy44OTJ2LTguMzRjMC0uODQyLjUxOC0zLjkyNSA0LjE4NS0zLjkyNS41NjQgMCAxLjEyNy4xMTIgMS43MTguMjUzbC4xNTItMy43MjZjLS40NS0uMTI3LS45MDEtLjIyMy0xLjM4Mi0uMjIzLTIuMDQ2IDAtMy43NjYgMS4wNy00LjYxIDIuODUyem0tNTIuNzE0LTguMDUxYy0xLjIxNy0uMDM3LTEuOTMyLjEyLTIuNjUxLjI2LS4yMTYtLjA1Ni0uNjIuMDAzLS42NDMuNDcyIDAgLjI1Mi4wOC40NDcuMjQuNTYyLjE1OS4xMTQgMS40OTMgMS4xIDIuNDczIDIuMTQyLS40Ny4wNTItLjk4LjEzOC0xLjUwNC4yNDYtLjU4NS0xLjI2NC0yLjQ2NS0uMTE0LTMuNzE0LS4wNjQtLjE0Ni4wMDYtLjI4Ni4wMjUtLjQzMS4wMzUtLjEzNy0xLjA1Ni0uMjM1LTIuMTUtLjIxLTIuOTIgMS42MTgtLjkxNyA0Ljc0OC0xLjU5MyA2Ljg3NC0xLjYyNmwuMzczLS4wMWMuMzEyLS4wMDMuMzM3LS4yNTEuMDQzLS4yOTEtMi42NDEtLjM2MS00LjkyOS4xNzMtNy4yNzkgMS4xNDUtMi40NDYgMS4wMzEtNS41NTggMy40MDMtNy40NTQgNy44NzktLjQ0NCAxLjI0Ny0yLjIxOSA3LjE5NS45MzUgMTIuMyAyLjU2IDQuMTQyIDUuODU1IDYuMTEzIDkuODg3IDYuNjc2IDQuMDI0LjU2MSA2LjIwNy4wNzUgOC43NTItMS4wNTUgNS45NTEtMi42NDIgMTAuNDk2LTEyLjU1OSA1Ljk1LTE5Ljc0Ny0xLjc5NC0zLjMxOS02LjQ5NS02LjIyOS0xMS42NDEtNi4wMDR6bS0yLjI1OSA0LjY0N2ExNy43NTQgMTcuNzU0IDAgMCAxIDIuMzYyLS4zNjggMTUuNzQxIDE1Ljc0MSAwIDAgMSAxLjc0OCAyLjU0Yy0uODA1LjM5LTEuODc4LjY4OC0yLjMxNSAxLjMxMi0uMTgxLjI2LS4yMjYuNjEzLS4yMzIuOTk1YTIzLjU5IDIzLjU5IDAgMCAwIC0zLjg3NyAxLjI4NmMtLjQ1My0xLjMzMi0uODUtMi42Ni0xLjEyNC0zLjg0MiAxLjI5Ni0xLjIzNyAyLjgxMy0xLjQzOCAzLjQzOC0xLjkyM3ptNi42MSAxNS44OGMtLjM1NC4wMzgtLjcwNi4wODMtMS4wMTYuMTMtLjc3LjEyMS0xLjc2Mi4zNzktMi42ODUuNzIzLS41My0uODQzLTEuOTUtMi44OTEtMi42NjctNC40MzcgMS40NDItLjcwOSAzLjQ1Ny0xLjMwMyA1Ljc3NS0xLjQ0NC4xOS4zMy40LjY2LjY5Ljk1Ni43NTcuNzc0LS40NCAxLjg4My0uMDk2IDQuMDcyem0tOC42MDMtOS4xNGMxLjEyLS41MyAyLjMtLjk2OCAzLjU2LTEuMjg2LS4wMDguMzMzLS4wNDUuNjQ5LS4xODIuOTAzLS4xOTYuMzY2LS4xMDYgMS40MjguMTM0IDEuNzc1Ljc1NSAxLjA5OSAyLjAwOC40ODggMi45NTEuODgzLjQzMy4xODEuNzIxLjQ4Mi45NjQuODQtMS45NzQuMTI0LTMuOTEuNTg0LTUuNzA2IDEuNDEtLjkyMy0xLjk2LTEuNzItNC41MjQtMS43Mi00LjUyNHptLjgzMiA0LjkzOGMtLjA3LjAzMy0uMTQ1LjA3NC0uMjE3LjExYTQwLjgwMyA0MC44MDMgMCAwIDAgLTMuMjU2LS43OGMtLjk5NS0uMjA0LTEuMDMxLS4xNS0yLjE1MS4xNzUtLjE2LjA0Ni0uMzEzLjA4OC0uNDYyLjEzM2EzNi4xNyAzNi4xNyAwIDAgMSAtLjQ0NS0xLjIwMmMxLjQzNi0xLjEwNiAyLjg4NC0yLjAzNCA0LjgyMS0yLjk4NS41IDEuNDkxIDEuMjE1IDMuNDgzIDEuNzEgNC41NDl6bS43NjggNC41MjhjLjI5My0uNzY1LjUyMS0xLjMzMS42MDUtMS44OS41NjkuOTU4IDEuMjQ4IDIgMS43NzQgMi44MTUtLjgxOS4zOTctMS43NzIgMS4wMS0yLjY3MiAxLjY4NS4wNjItMS4wMzcuMDgzLTIuMDY0LjI5My0yLjYxem01LjMzNC0xNC42MzZjLS4wMS4wMTQtLjAyOC4wMjYtLjA0LjA0YTIzLjA1NyAyMy4wNTcgMCAwIDAgLTEuMzc2LTIuMTExYzEuMDA3LS4wNjEgMi4yNDYtLjAwOCAzLjM3NC4xMDgtMS4wMTQuMzYzLTEuNDYxIDEuMjU0LTEuOTU4IDEuOTYzem0tOS4wMjggMS4wOTRjLjAxOS0uMDI2LjAzOS0uMDQ3LjA1Ny0uMDcyLjIzNCAxLjE4Mi41MTMgMi4xNi44ODYgMy41MTgtMS40MDIuNjE4LTMuODgxIDIuMTQ4LTQuOTc2IDIuOTcyLS4xOTgtLjUwMi0uNDA0LTEuMjE0LS41ODktMS45NDYuMjQ5LS43MzcuNzU4LTEuMjU0IDEuNDc2LTEuMzI1IDEuMjI4LS4xMjMgMi4yOC0xLjk1IDMuMTQ2LTMuMTQ3em0tNS40MS0xLjc4NGMxLjMxMy0xLjgzOCAzLjA5Ni0zLjYyNyA0LjcyMy00LjUyLS4wMTYuNC4wODYgMS41NjcuMjE4IDIuNjkzLS41Ny4wNTctMS4xMzQuMTI4LTEuNjkyLjIxMWExMi4wODQgMTIuMDg0IDAgMCAwIC0zLjExNSA0LjA4OGMtLjExNy0xLjA1NC0uMTc4LTEuOTMzLS4xMzMtMi40NzJ6bS0uODU3IDEuNDM4cy4wNjIgMS4wNi4xMTMgMS44MzNjMCAwLS43ODEuODg2LTEuMTggMS41OS4xNTktMS40NDMuNDk4LTIuMTg3IDEuMDY3LTMuNDIzem03LjY2NCAxOC4zNTZjLTQuMDQ2LTEuMjY3LTcuMDQ0LTQuNjc3LTguMTE0LTguMjUzYTE3LjQ3NSAxNy40NzUgMCAwIDEgLS42NTEtNi40NzNjLjA1Ni4wMS4xODYuMDcyLjM4LjAxNy4xMzUtLjA5My42MTYtLjQzLjk1Ny0uNzI4bC4wMTguMTMxYy0uMjMuODctLjM3MSAxLjc3NS0uNCAyLjcxLjM3LjM5LjgwNCAxLjAzOCAxLjI4NiAxLjcwNy0uMzEuMjMtLjkwNS42NDEtMS4wNDUuNzQxLS40MS4yOTItLjQwNi43NTMtLjExNCAxLjAxNS4xNjEuMTQ0LjQ5Mi4wODQuNjEzLS4wMS4zNTgtLjI4NS42NTYtLjUxMyAxLjA2Ni0uNzcuMTUuMzkzLjI5Mi43NDguNDMgMS4wODYtLjE3NS4xODgtLjMuNDM2LS4zNDIuNzk4LS4xMzUgMS4xNzIuOTc5IDIuMDkyIDEuOTE4IDIuMzYuMDM1LjAxLjA2LjAxNC4wOTQuMDIzLjA1LjA3Ni4wOTUuMTQ3LjE0OC4yMjQtLjQ4Ny4zNzgtLjgyLjc2NS0xLjA0OSAxLjA2My0uMTMyLjE3Mi0uMjguNDMtLjE2LjQ4MS4xMjMuMDUuNTM1IDAgLjcxOS0uMDM0LjQ2Ni0uMDkuODI2LS42MDYgMS4xNDgtLjc5Ni4zODcuNTM0IDEuMDE3IDEuMjIgMS42NzIgMS44OC4wMjkuMTIuMDU1LjI0Ni4wODguMzUxLjEyNS40MDMuMjkzLjgwNC40OTUgMS4xOTYuNDcxLjIyLjk2Mi40MDIgMS40NjQuNTYxYTguMzQ0IDguMzQ0IDAgMCAwIC0uNjIyLjcyem0uOTg5LjMxM2MuMTU1LS4yMDMuMzEyLS40NTQuNTA1LS42MjYuNDY4LjMxLjk2OS42NjUgMS4zNjguODk0LS42MTUtLjA3LTEuMzM3LS4wODUtMS44NzMtLjI2OHptMy4xMTMuMzFzLTEuNjA0LTEuMDYyLTIuMDA5LTEuNDcxYy44MDMtLjY2NyAyLjEwMi0xLjQ1OSAzLjEyOC0xLjg4OS40MDIuNjMgMS43MjcgMi41MDcgMi4yNTggMy4xMTItLjk2My4xNjgtMi4zMS4yOTQtMy4zNzcuMjQ4em02LjcwNC0xLjUxYy0uMjg2LjE4OS0xLjY2NC44MTQtMi4yMDQuOTg4YTIzLjQzIDIzLjQzIDAgMCAxIC0yLjQ0LTMuMjAyYy44NDQtLjM1NCAyLjE0My0uNjcgMy4zNDYtLjgyLjEwOS4zNDIuMjUuNzA0LjQ0NCAxLjA5NC4xOS4zODIuNDExLjY2Mi42NDkuODUzLjA4NS0uMDUzLjE2NC0uMTE1LjI0OC0uMTctLjAwNi40Mi0uMDE4Ljg0Ni0uMDQzIDEuMjU3em0tLjMzLTIxLjQ3N2MtLjI3LS4xNzItLjYwNy0uMTA4LS40NjcuMTkzLjA1My4xMTcuMjU5LjMxNC40MjcuNTEyLS45ODYtLjI3Mi0zLjYwOC0uNDc5LTQuODU2LS4zNjQtLjgxNS0uOTE2LTEuNzQ0LTIuMDI4LTIuODYxLTIuNzY1IDQuOTk5LS4zMTEgOS40OSAxLjc1NiAxMS40NzMgNC4xODYtLjY2MS0uMzQ0LTIuMDg3LS44MzQtMi42NjctLjk2My0uMzEzLS4zMTktLjcwOC0uNTgtMS4wNS0uOHptMS4wOTQgMjEuMDY1Yy4wMjMtLjQwNy4wNC0uOTIyLjA1My0xLjM5Ni40ODctLjM3OC45NDYtLjc5IDEuMzctMS4yMzguNTQ3LjA2MyAxLjA5NC4xNTYgMS40MjcuMjQtLjc0LjkzNi0xLjc2MiAxLjcxNi0yLjg1IDIuMzk0em0zLjgyNS0zLjcyNGMtLjEyLjI1My0uNDI4LjY4OC0uNjMzLjg5NC0uMzEyLS4xMjYtLjc4MS0uMjU4LTEuMjcyLS4zNzUuMDc4LS4wOTQuMTYzLS4xODIuMjQtLjI3OS4yNjgtMS43OTYtLjMzOC0yLjM3LjQyLTQuMDE0bC4xNzItLjM3MWMuNDE4LjExOC44MTIuMjQ3IDEuMTUzLjM4Ni4wNDMuNjE2LjA0IDIuNzI4LS4wOCAzLjc1OXptLS43MDgtNC45MTdjLjE5Ni0uNDA3LjQxMi0uODQuNjQ1LTEuMjcuMDYxLjU0Ny4xMDUgMS4wOC4xMzEgMS41NjNhOS4yNTYgOS4yNTYgMCAwIDAgLS43NzYtLjI5M3ptMi4yMTggMS4xMjYtLjE5NC43NTZjLS4xMzcuNTE1LS41OTMgMS43MzItLjgzMiAyLjIyMy4wOTEtLjY2My4xNzEtMi4zODQuMTQ4LTIuNzMuMTYuMDQ5LjUwMi0uMTQ3LjU1OS0uMzQxLjA1Ny0uMTk1LS41NjQtLjQ5NS0uNTY0LS40OTVhMjAuNzQyIDIwLjc0MiAwIDAgMCAtLjE3Mi0yLjdjLjE0Mi0uMjMuMjg2LS40NTIuNDM0LS42NTVhMTIuMDgyIDEyLjA4MiAwIDAgMCAtLjE4Ni0xLjU3NWMuMTI1LjA0MS4yNC4wNzQuMzIzLjA3NS4yODMuMDA0LjI4Mi0uMTkuMTkyLS4yOTgtLjA1OC0uMDctLjMyOC0uMjM4LS42NDMtLjQyYTEyLjAyIDEyLjAyIDAgMCAwIC0yLjc4LTUuMzJjLjUzMy4yMDIgMS4yMTQuNDggMS43NTQuNzc0LjQxLjUxNiAxLjU4NSAxLjY3NSAyLjIxMiA0LjkyLjU2NCAyLjkyMi0uMDYgNS4xNDMtLjI1MSA1Ljc4NnptNTQuMjQ3LTEwLjY3NnYtLjI0aDEuMjE4di4yNGgtLjQ2OHYxLjE5MWgtLjI4M3YtMS4xOTF6bTEuODctLjI0LjM2NSAxLjAyNS4zNjgtMS4wMjRoLjQwNnYxLjQzaC0uMjYydi0xLjE1NGwtLjM5NiAxLjE1NGgtLjIyOWwtLjQtMS4xNTR2MS4xNTRoLS4yNjF2LTEuNDNoLjQwOXoiLz48L3N2Zz4=" alt="esri">
+                <p>Backend Developer Intern @ <a href="https://www.esri.com/en-us/home">Esri</a></p>
+                <p><i>The global leader in GIS technology, shaping the future of geospatial data.</i></p>
+                <p>May - Aug, 2024 | Redlands, CA</p>
+            </div>
+            <div class="column">
+                <img src="430a172f695189f13bfb.png" alt="tencent">
+                <p>Software Engineer Intern @ <a href="https://www.tencent.com/en-us/">Tencent</a></p>
+                <p><i>China's tech titan, the world's largest gaming company and a leader in social media, fintech, and
+                        AI.</i></p>
+                <p>Jun - Sep, 2022 | Shenzhen, China</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAwIDI2Ni42NyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CjxnIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIuMTgwMiI+CjxwYXRoIGQ9Im0yODkuMTIgMGMtMTUuMDc1IDAtMjcuMjExIDEyLjEzNi0yNy4yMTEgMjcuMjExczEyLjEzNiAyNy4yMTEgMjcuMjExIDI3LjIxMSAyNy4yMTEtMTIuMTM2IDI3LjIxMS0yNy4yMTEtMTIuMTM2LTI3LjIxMS0yNy4yMTEtMjcuMjExem0tMjI5LjQyIDc4LjU3MWMtMzMuMDcgMC01OS42OTQgMjYuNjIzLTU5LjY5NCA1OS42OTR2MTAzLjA2YzAgMTMuNjYyIDEwLjk5OCAyNC42NiAyNC42NiAyNC42NiAxMy42NjIgMCAyNC42Ni0xMC45OTggMjQuNjYtMjQuNjZ2LTkzLjcwN2MwLTEwLjc0MSA4LjY0NjktMTkuMzg4IDE5LjM4OC0xOS4zODhzMTkuMzg4IDguNjQ2OSAxOS4zODggMTkuMzg4djkzLjcwN2MwIDEzLjY1OSAxMC45OTQgMjQuNjYgMjQuNjUzIDI0LjY2IDEzLjY1OCAwIDI0LjY1My0xMS4wMDEgMjQuNjUzLTI0LjY2di05My43MDdjMC0xMC43NDEgOC42NDY5LTE5LjM4OCAxOS4zODgtMTkuMzg4IDEwLjc0MSAwIDE5LjM4NSA4LjY0NjkgMTkuMzg4IDE5LjM4OGwwLjAxNDYgNTAuMzRjMC4wMTExIDM4LjA2NCAzMC42NDQgNjguNzA3IDY4LjcwNyA2OC43MDcgMzguMDY0IDAgNjguNzA3LTMwLjY0NCA2OC43MDctNjguNzA3di04NS44ODRjMC0xMy42NjItMTAuOTk4LTI0LjY2LTI0LjY2LTI0LjY2LTEzLjY2MiAwLTI0LjY2IDEwLjk5OC0yNC42NiAyNC42NnY4NC44NjRjMCAxMC43NDEtOC42NDY5IDE5LjM4OC0xOS4zODggMTkuMzg4LTEwLjc0MSAwLTE5LjM4NS04LjY0NjktMTkuMzg4LTE5LjM4OGwtMC4wMTQ2LTU4LjY3M2MtOGUtMyAtMzMuMDctMjYuNjIzLTU5LjY5NC01OS42OTQtNTkuNjk0LTE4LjcwMiAwLTM1LjU1NSA4LjQyODYtNDYuNDc0IDIxLjg5NC0xLjM3MDkgMS42OTA4LTMuMzU2MiAzLjI3NTgtNi41ODAyIDMuMjc1OC0zLjIyNCAwLTUuMjA5Mi0xLjU4NTEtNi41ODAyLTMuMjc1OC0xMC45MTgtMTMuNDY2LTI3Ljc3Mi0yMS44OTQtNDYuNDc0LTIxLjg5NHoiIGZpbGw9IiM3M2Q4ZjEiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgZmlsbCBtYXJrZXJzIi8+CjxwYXRoIGQ9Im0zNzcuMzggMTQuOTY2Yy0xMy42NjIgMC0yNC42NiAxMC45OTgtMjQuNjYgMjQuNjZ2MjAxLjdjMCAxMy42NjIgMTAuOTk4IDI0LjY2IDI0LjY2IDI0LjY2IDEzLjY2MiAwIDI0LjY2LTEwLjk5OCAyNC42Ni0yNC42NnYtNjYuMTU2YzAtNi4yMTg0IDUuMDA2MS0xMS4yMjQgMTEuMjI0LTExLjIyNGgyNi41MzFjNi4yMTg0IDAgMTEuMjI0IDUuMDA2MSAxMS4yMjQgMTEuMjI0djY2LjE1NmMwIDEzLjY2MiAxMC45OTggMjQuNjYgMjQuNjYgMjQuNjYgMTMuNjYyIDAgMjQuNjYtMTAuOTk4IDI0LjY2LTI0LjY2di0yMDEuN2MwLTEzLjY2Mi0xMC45OTgtMjQuNjYtMjQuNjYtMjQuNjYtMTMuNjYyIDAtMjQuNjYgMTAuOTk4LTI0LjY2IDI0LjY2djYxLjA1NGMwIDYuMjE4NC01LjAwNjEgMTEuMjI0LTExLjIyNCAxMS4yMjRoLTI2LjUzMWMtNi4yMTg0IDAtMTEuMjI0LTUuMDA2MS0xMS4yMjQtMTEuMjI0di02MS4wNTRjMC0xMy42NjItMTAuOTk4LTI0LjY2LTI0LjY2LTI0LjY2eiIgZmlsbD0iIzRlYTRkZCIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz4KPHBhdGggZD0ibTcwMS43IDE0Ljk2NmMtNy44MjMxIDAtMTUuNDcxIDkuODY0LTguNDY4OCAxOS41OGw0OC42MDUgODcuOTAzdjExOC44OGMwIDEzLjY2MiAxMS4wMDIgMjQuNjYgMjQuNjYzIDI0LjY2IDEzLjY2MiAwIDI0LjY2My0xMC45OTggMjQuNjYzLTI0LjY2di0xMTguODhsNDguNjA1LTg3LjkwM2M3LjAwMjYtOS43MTU4LTAuNjUyMzgtMTkuNTgtOC40Njg5LTE5LjU4aC0yNS4yNWMtMy4zOTg4IDAtNy40ODAzIDIuMjU1LTkuMTEwNiA1LjIzNzNsLTI3LjA3MyA0OS41MjVjLTAuNjg2NCAxLjI1NTYtMS44ODUzIDEuNzAwNy0zLjE5OTQgMS43MDA3cy0yLjYwNzktMC40NDc3LTMuMjk5LTEuNzAwN2wtMjcuMzItNDkuNTI1Yy0xLjY0MTctMi45NzYtNS42OTg1LTUuMjM3My05LjA5NzMtNS4yMzczeiIgZmlsbD0iIzRlYTRkZCIgc3R5bGU9InBhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz4KPHBhdGggZD0ibTU0NC4zOSA2NC45NjZjLTEuMzYwNiAwLTIuMjEwOSA2LjQ2MjYtMi4yMTA5IDE1LjMwNnMxLjcwMDcgMTcuMzQ3IDMuNDAxNCAxNy4zNDcgMS43MDA3LTEuMDIwNCA5Ljg2NC04LjE2MzNjOC4xNjMzLTcuMTQyOSA5LjUyMzgtNy4xNDI5IDkuNTIzOC05LjE4MzdzLTMuMDYxMi0zLjc0MTUtMTAuMjA0LTguODQzNWMtNy4xNDI5LTUuMTAyLTkuMDEzNi02LjQ2MjYtMTAuMzc0LTYuNDYyNnptMTQzLjIgMGMtMS4zNjA2IDAtMy4yMzEzIDEuMzYwNS0xMC4zNzQgNi40NjI2LTcuMTQyOSA1LjEwMi0xMC4yMDQgNi44MDI3LTEwLjIwNCA4Ljg0MzVzMS4zNjA2IDIuMDQwOCA5LjUyMzggOS4xODM3YzguMTYzMyA3LjE0MjkgOC4xNjMzIDguMTYzMyA5Ljg2NCA4LjE2MzNzMy40MDE0LTguNTAzNCAzLjQwMTQtMTcuMzQ3LTAuODUwMzQtMTUuMzA2LTIuMjEwOS0xNS4zMDZ6bS03MS41OTkgMTQuMjg2Yy00NS4wNzYgMC04MS42MzMgNDEuODk3LTgxLjYzMyA5My41MzcgMCA1MS42NTkgMzYuNTQ4IDkzLjUzNyA4MS42MzMgOTMuNTM3IDQ1LjA4NCAwIDgxLjYzMy00MS44NzggODEuNjMzLTkzLjUzNyAwLTUxLjY0LTM2LjU1Ni05My41MzctODEuNjMzLTkzLjUzN3ptMCA0Ni41OTljMjIuNTE3IDAgNDAuODE2IDIxLjA3MiA0MC44MTYgNDYuOTM5IDAgMjUuOTI0LTE4LjI3NCA0Ni45MzktNDAuODE2IDQ2LjkzOS0yMi41NDIgMC00MC44MTYtMjEuMDE1LTQwLjgxNi00Ni45MzktMWUtNCAtMjUuODY2IDE4LjI5OS00Ni45MzkgNDAuODE2LTQ2LjkzOXoiIGZpbGw9IiM0ZWE0ZGQiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2UgZmlsbCBtYXJrZXJzIi8+CjxwYXRoIGQ9Im05NzcuODkgNzAuNDA4Yy0xMy45MjEgMC0yMC43NDggNi4xMjI0LTI0LjgzIDkuMTgzNy00LjA4MTYgMy4wNjEyLTcuNDgzIDYuMTIyNC0xMS4yMjQgNi4xMjI0LTkuNTIzOCAwLTE2LjMyNy02LjQ2MjYtMzUuMzc0LTYuNDYyNi00NS4wODQgMC04MS42MzMgNDEuODc4LTgxLjYzMyA5My41MzdzMzYuNTQ4IDkzLjUzNyA4MS42MzMgOTMuNTM3YzQ1LjA4NCAwIDgxLjYzMy00MS44NzggODEuNjMzLTkzLjUzNy0yLjRlLTQgLTE4Ljg0Mi00Ljk2NjUtMzcuMjQ0LTE0LjI0OS01Mi43OTctMS41NjE4LTQuMDA1Mi0yLjA3OC04LjA4NjktMi4wNzI3LTE2LjA4IDdlLTMgLTExLjA1NCA1LjMyOTgtMTkuMTkzIDExLjIxOS0yMy4yOTkgNS44ODk0LTQuMTA1OSAxMC44ODQtNS4xMDIgMTcuMDA3LTUuNzgyMy02LjQ2MjYtMy4wNjEyLTEzLjk0Ni00LjQyMTgtMjIuMTA5LTQuNDIxOHptLTcxLjQyOSA1NS40NDJjMjIuNTE3LTAuMDQwNCA0MC44MTYgMjEuMDE1IDQwLjgxNiA0Ni45MzlzLTE4LjI3NCA0Ni45MzktNDAuODE2IDQ2LjkzOWMtMjIuNTQyIDAtNDAuODE2LTIxLjAxNS00MC44MTYtNDYuOTM5LTFlLTQgLTI1Ljg2NiAxOC4yOTktNDYuODk4IDQwLjgxNi00Ni45Mzl6IiBmaWxsPSIjNGVhNGRkIiBzdHlsZT0icGFpbnQtb3JkZXI6c3Ryb2tlIGZpbGwgbWFya2VycyIvPgo8L2c+Cjwvc3ZnPgo=" alt="mihoyo">
+                <p>Fullstack Engineer Intern @ <a href="https://www.mihoyo.com/en/">miHoYo</a> (AKA <a
+                        href="https://www.hoyoverse.com/en-us/">HoYoverse</a>)</p>
+                <p><i>Creator of the highest-grossing game globally, Genshin Impact, generating over $4 billion.</i></p>
+                <p>Dec 2022 - Jun 2023 | Shanghai, China</p>
+            </div>
+            <div class="column">
+                <img src="8afb0a8a48dce2f10baf.png" alt="momenta">
+                <p>Backend Developer Intern @ <a href="https://www.momenta.cn/">Momenta.ai</a></p>
+                <p><i>China's top autonomous driving startup, with $1 billion in funding, leading Level 4
+                        automation.</i></p>
+                <p>Aug - Dec, 2023 | Suzhou, China</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skills">
+        <img class="word" src="689bffd5492d7bb6a730.png" />
+        <div class="block-container">
+            <div class="block" onclick="openModal('popup1')">Programming Languages</div>
+            <div class="block" onclick="openModal('popup2')">Backend</div>
+            <div class="block" onclick="openModal('popup3')">Frontend</div>
+            <div class="block" onclick="openModal('popup4')">Big Data</div>
+            <div class="block" onclick="openModal('popup5')">Cloud Services</div>
+            <div class="block" onclick="openModal('popup6')">Others</div>
+        </div>
+        <div id="video-container">
+            <video controls>
+                <source src="7e0589fa5f3cab70471e.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:martinhou2020a@gmail.com">Email</a>
+        <br />
+        <br />
+        <i class="fa-brands fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/ych" target="_blank">LinkedIn</a>
+        <br />
+        <br />
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/MartinHou" target="_blank">GitHub</a>
+    </footer>
+
+    <!-- Modals -->
+    <div id="popup1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('popup1')">&times;</span>
+            <img src="https://img.shields.io/badge/-Python-black?style=flat-square&logo=python" alt="Python Badge">
+            <img src="https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript"
+                alt="TypeScript Badge">
+            <img src="https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript"
+                alt="JavaScript Badge">
+            <img src="https://img.shields.io/badge/-C++-black?style=flat-square&logo=cplusplus" alt="C++ Badge">
+            <img src="https://img.shields.io/badge/-C_sharp-black?style=flat-square&logo=sharp" alt="C# Badge">
+            <img src="https://img.shields.io/badge/-SQL-black?style=flat-square&logo=mysql" alt="SQL Badge">
+        </div>
+    </div>
+
+    <div id="popup2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('popup2')">&times;</span>
+            <img src="https://img.shields.io/badge/-Django-000000?style=flat&logo=django" alt="Django Badge">
+            <img src="https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask" alt="Flask Badge">
+            <img src="https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js" alt="Node.js Badge">
+            <img src="https://img.shields.io/badge/-ASP.NET-000000?style=flat&logo=dotnet" alt="ASP.NET Badge">
+            <img src="https://img.shields.io/badge/-SpringBoot-000000?style=flat&logo=springboot"
+                alt="Spring Boot Badge">
+            <br />
+            <img src="https://img.shields.io/badge/-MySQL-000000?style=flat&logo=mysql" alt="MySQL Badge">
+            <img src="https://img.shields.io/badge/-PostgreSQL-000000?style=flat&logo=postgresql"
+                alt="PostgreSQL Badge">
+            <img src="https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb" alt="MongoDB Badge">
+            <img src="https://img.shields.io/badge/-Neo4j-000000?style=flat&logo=neo4j" alt="Neo4j Badge">
+            <br />
+            <img src="https://img.shields.io/badge/-Kafka-000000?style=flat&logo=apachekafka" alt="Kafka Badge">
+            <img src="https://img.shields.io/badge/-Kubernetes-000000?style=flat&logo=kubernetes"
+                alt="Kubernetes Badge">
+            <img src="https://img.shields.io/badge/-Redis-000000?style=flat&logo=redis" alt="Redis Badge">
+        </div>
+    </div>
+
+    <div id="popup3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('popup3')">&times;</span>
+            <img src="https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5&logoColor=white"
+                alt="HTML Badge">
+            <img src="https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3" alt="CSS Badge">
+            <img src="https://img.shields.io/badge/-React-black?style=flat-square&logo=react" alt="React Badge">
+            <img src="https://img.shields.io/badge/-Material_UI-black?style=flat-square&logo=materialdesign"
+                alt="Material UI Badge">
+            <img src="https://img.shields.io/badge/-Ant_Design-black?style=flat-square&logo=antdesign"
+                alt="Ant Design Badge">
+        </div>
+    </div>
+
+    <div id="popup4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('popup4')">&times;</span>
+            <img src="https://img.shields.io/badge/-Flink-000000?style=flat&logo=apacheflink" alt="Flink Badge">
+            <img src="https://img.shields.io/badge/-Spark-000000?style=flat&logo=apachespark" alt="Spark Badge">
+
+        </div>
+    </div>
+
+    <div id="popup5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('popup5')">&times;</span>
+            <img src="https://img.shields.io/badge/-AWS-black?style=flat-square&logo=amazonwebservices" alt="AWS Badge">
+            <img src="https://img.shields.io/badge/-Google_Cloud-black?style=flat-square&logo=googlecloud"
+                alt="Google Cloud Badge">
+            <img src="https://img.shields.io/badge/-HUAWEI_Cloud-black?style=flat-square&logo=huawei"
+                alt="HUAWEI Cloud Badge">
+        </div>
+    </div>
+
+    <div id="popup6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('popup6')">&times;</span>
+            <img src="https://img.shields.io/badge/-Git-black?style=flat-square&logo=git" alt="Git Badge">
+            <img src="https://img.shields.io/badge/-CICD-black?style=flat-square&logo=gitlab" alt="CICD Badge">
+            <img src="https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker" alt="Docker Badge">
+            <img src="https://img.shields.io/badge/-Nginx-black?style=flat-square&logo=nginx" alt="Nginx Badge">
+            <img src="https://img.shields.io/badge/-CUDA-black?style=flat-square&logo=nvidia" alt="CUDA Badge">
+        </div>
+    </div>
+
+    <script src="6a7c234a8147f6fc10a3.js" type="text/javascript"></script>
+<script defer src="bundle.js"></script></body>
+
+</html>
