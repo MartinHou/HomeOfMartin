@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 'latest'  # 使用最新的 Node.js 版本
+        node-version: '18.4.0'  # 使用最新的 Node.js 版本
 
     - name: Install dependencies
       run: npm install  # 安装依赖
